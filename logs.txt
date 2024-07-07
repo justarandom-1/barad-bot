@@ -1,0 +1,7 @@
+Bot Logs:
+
+2023-11-25 01:59:39.560268 _just_a_random used 'rolemod bots (Give)' in Discord Hub 1
+2023-11-25 03:10:54.453722 _just_a_random used 'spam channels(d)' in Discord Hub 1
+2023-11-25 03:16:13.977360 _just_a_random used 'kick' on 0 in Discord Hub 1
+2023-11-25 03:16:29.539300 _just_a_random used 'kick' on 1 in Discord Hub 1
+2023-11-25 03:17:38.501865 _just_a_random used 'ban' on 1 in Discord Hub 1
