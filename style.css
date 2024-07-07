@@ -78,57 +78,89 @@ page{
 }
 
 sidebar{
+  
+  display: none;
+  
+}
 
-  width: 150px;
+content {
 
-  background: rgb(40,43,48);
+  width: 100vw;
 
-  height: 100%;
-
-  position: fixed;
-
-  z-index: 999;
+  justify-content: center;
 
 }
 
-sidebar > icon{
+@media only screen and (min-width: 768px) {
 
-  display: flex;
+  content {
 
-  height: 150px;
+    width: calc( 100vw - 150px );
 
-  background: rgb(30,33,36);
+    margin-left: 150px;
+
+    position: sticky;
+
+    flex: 1 0 auto;
+
+  }
+  
+  sidebar{
+
+    display: block;
+  
+    width: 150px;
+  
+    background: rgb(40,43,48);
+  
+    height: 100%;
+  
+    position: fixed;
+  
+    z-index: 999;
+  
+  }
+  
+  sidebar > icon{
+  
+    display: flex;
+  
+    height: 150px;
+  
+    background: rgb(30,33,36);
+  
+  }
+  
+  sidebar > icon > img{
+  
+    margin-left: 25px;
+  
+    margin-top: 25px;
+  
+    border: 2px solid rgb(255, 74, 0);
+  
+    border-radius: 30px;
+  
+    width: 90px;
+  
+    height: 90px;
+  
+  }
+  
+  sidebar > nav{
+  
+    margin-left: 20px;
+  
+    font-size: 14px;
+  
+    line-height: 2.5;
+  
+    color: rgb(211,212,221);
+  
+  }
 
 }
-
-sidebar > icon > img{
-
-  margin-left: 25px;
-
-  margin-top: 25px;
-
-  border: 2px solid rgb(255, 74, 0);
-
-  border-radius: 30px;
-
-  width: 90px;
-
-  height: 90px;
-
-}
-
-sidebar > nav{
-
-  margin-left: 20px;
-
-  font-size: 14px;
-
-  line-height: 2.5;
-
-  color: rgb(211,212,221);
-
-}
-
+  
 ul, ol {
   list-style: none;
   padding-left: 0;
@@ -143,20 +175,6 @@ ul ul{
 nav a {
 
   color: rgb(211,212,221);
-
-}
-
-content {
-
-  width: calc( 100vw - 150px );
-
-  position: sticky;
-
-  flex: 1 0 auto;
-
-  margin-left: 150px;
-
-  justify-content: center;
 
 }
 
@@ -195,7 +213,7 @@ header#home{
 
 logo{
 
-  font-size: 42px;
+  font-size: 36px;
 
   color: rgb(255, 74, 0);
 
@@ -214,7 +232,7 @@ h1{
 
   color: rgb(255, 74, 0);
 
-  font-size: 24px;
+  font-size: 22px;
 
   font-weight: bold;
 
@@ -228,7 +246,7 @@ h2{
 
   color: rgb(255, 74, 0);
 
-  font-size: 22px;
+  font-size: 20px;
 
   font-weight: bold;
   
@@ -242,13 +260,11 @@ h2{
 
 large{
 
-  font-size: 18px;
+  font-size: 16px;
 
   text-align: center;
 
   font-weight: normal;
-
-  margin: 5px;
 
 }
 
@@ -268,7 +284,9 @@ box{
 
   max-width: 1000px;
 
-  width: calc(100vw - 400px);
+  width: max(calc(100vw - 400px), max-content, 120px);
+
+  min-width: 120px;
 
   margin: 10px 25px;
 
@@ -284,13 +302,66 @@ box{
 
   align-items: center;
 
-  font-size: 16px;
+  font-size: 14px;
+
+}
+
+
+box box{
+
+  border: 0px;
+
+  padding: 0px;
+
+  margin: 15px 0px 0px;
+  
+}
+
+
+large{
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  box{
+
+    width: calc(100vw - 400px);
+
+    font-size: 16px;
+
+  }
+
+  box box{
+
+    border: 2px solid rgb(255, 74, 0);
+
+    min-width: 100px;
+
+    font-weight: normal;
+
+    padding: 15px;
+
+    background: rgb(52,55,58);
+    
+    padding: 25px;
+
+    margin: 15px;
+    
+  }
+
+  large{
+    font-size: 18px;
+    margin: 5px
+  }
 
 }
 
 box.top{
   margin: 50px 15px 25px;
 }
+
+
 
 box.fit{
 
@@ -300,31 +371,86 @@ box.fit{
 
 }
 
+div.row{
+  flex-direction: column;
+}
 
-box.left{
+div.holder{
 
-  max-width: 450px;
+  font-size: 18px;
 
-  width: calc(50vw - 225px);
+  /* width: max-content;
 
-  float: left;
+  max-width: max(calc(100vw - 400px), 120px); */
 
-  margin: 25px 25px 25px 50px;
+  align-self: center;
+
+  display: block;
+
+  margin: 5px;
+
+}
+
+/* box.left{
+
+  margin: auto;
 
 }
 
 box.right{
 
-  max-width: 450px;
+  margin: auto;
 
-  width: calc(50vw - 225px);
+} */
 
-  float: right;
+@media only screen and (min-width: 768px) {
 
-  margin: 25px 50px 25px 25px;
+  div.row{
+    flex-direction: row;
+  }
+
+  div.holder{
+
+    max-width: min(calc(50vw - 255px), 420px);
+    
+    padding: 5px 15px;
+
+    margin: auto;
+
+  }
+  
+  box.left{
+
+    max-width: 450px;
+
+    width: calc(50vw - 225px);
+
+    float: left;
+
+    margin: 25px 25px 25px 50px;
+
+  }
+
+  box.right{
+
+    max-width: 450px;
+
+    width: calc(50vw - 225px);
+
+    float: right;
+
+    margin: 25px 50px 25px 25px;
+
+  }
+
 
 }
 
+box:has(> command_drop){
+
+  width: 100vw;
+  
+}
 
 box command_drop{
 
@@ -368,18 +494,6 @@ img.open{
 
   transform: rotate(270deg);
   
-}
-
-box box{
-
-  background: rgb(52,55,58);
-
-  font-weight: normal;
-
-  padding: 25px;
-
-  margin: 15px;
-
 }
 
 command_drop box{
@@ -434,18 +548,6 @@ command_drop:has(input.open:checked) box{
 
 }
 
-div.holder{
-
-  padding: 5px 15px;
-
-  width: max-content;
-
-  max-width: min(calc(50vw - 255px), 420px);
-
-  align-self: center;
-
-}
-
 content > div#cover{
 
   margin-top: 10px;
@@ -464,9 +566,13 @@ content > div#cover{
 
 content > div#cover > img{
 
-  width: 600px;
+  max-width: 600px;
 
-  height: 600px;
+  max-height: 600px;
+  
+  width: 50vs;
+
+  height: 50vw;
 
 }
 
@@ -478,23 +584,44 @@ content p{
 }
 
 dl{
-  display: grid;
-  grid-template-columns: max-content auto;
   font-size: 14px;
-  margin: 15px 15px 0px;
 }
 
-dt {
-  grid-column-start: 1;
+dt{
+  font-weight: bold;
 }
 
 dt::after {
   content: ":";
 }
 
-dd {
-  grid-column-start: 2;
-  margin: 0 15px 15px 5px;
+dd{
+  font-size: 14px;
+  margin: 0 15px 15px 0px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  dl{
+    display: grid;
+    grid-template-columns: max-content auto;
+    margin: 15px 15px 0px;
+  }
+  
+  dt {
+    font-weight: normal;
+    grid-column-start: 1;
+  }
+
+  dd {
+    grid-column-start: 2;
+    margin: 0 15px 15px 5px;
+  }
+
+  .bullet.small{
+    margin: 15px;
+  }
+  
 }
 
 box ul li{
@@ -502,6 +629,7 @@ box ul li{
   margin-left: 15px;
 
 }
+
 
 ul.large{
 
@@ -518,14 +646,36 @@ ul.bullet{
 
 ul.large > li {
 
-  font-size: 22px;
+  font-size: 18px;
 }
 
 
 ul.large > li > span {
 
-  font-size: 18px;
+  font-size: 14px;
   
+}
+
+@media only screen and (min-width: 768px) {
+
+  ul.large > li {
+
+    font-size: 22px;
+  }
+
+
+  ul.large > li > span {
+
+    font-size: 18px;
+
+  }
+
+  .id{
+
+    margin-left: 15px;
+
+  }
+
 }
 
 ul.small > li > span {
@@ -554,11 +704,6 @@ n.i{
 
 }
 
-.id{
-
-  margin-left: 15px;
-  
-}
 
 table.two_column td, table.two_column th{
   width: 50%;
