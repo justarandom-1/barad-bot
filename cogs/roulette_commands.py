@@ -10,9 +10,9 @@ class roulette_commands(commands.Cog):
     @commands.hybrid_group(name="roulette", fallback = 'info', description = "Discord Roulette!")
     @commands.bot_has_permissions(send_messages = True)
     async def roulette(self, ctx):
-      await ctx.send('Roulette!')
-      return
-
+      e = {'title': "__Discord Roulette Info__",
+           'description': "[Visit the bot docs page to learn more about Discord Roulette!](https://justarandom-1.github.io/barad-bot/#roulette)"}
+      await ctx.send(embed = embed(e).set_thumbnail(url = "https://i.imgur.com/WUaFVmO.png"))
 
     @roulette.command(name = 'select_killer', description = "Selects killer for Discord Roulette")
     @commands.guild_only()
