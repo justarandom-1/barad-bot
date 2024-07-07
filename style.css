@@ -502,6 +502,12 @@ command_drop box{
   
 }
 
+command_drop > div{
+
+  justify-content: left;
+
+}
+
 command_drop box div p{
 
   margin: 0px;
