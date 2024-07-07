@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <page>
+  
+    <sidebar>
+     
+      <icon>
+        <img src="barad.jpeg">
+      </icon>
+   
+      <nav class="horizontal"> 
+        <ul>
+          <li><a href="#home">Top</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#general">General</a></li>
+          <li><a href="#mod">Moderation</a></li>
+            <ul>
+              <li><a href="#automod">Automod</a></li>
+            </ul>
+          <li><a href="#roulette">Roulette</a></li>
+          <li><a href="#sw">Star Wars</a></li>
+          <li><a href="#misc">Miscellaneous</a></li>
+        </ul>
+      </nav>
+    </sidebar>
+   
+    <content>
+      
+      <header class="headline" id="home">
+        <div id="top">
+          <logo>Barad-Dur Bot</logo>
+        </div>
+      </header>
+      <div id="cover">
+        <img src="barad.jpeg">
+      </div>
+      <div class="c"><a href="https://bit.ly/3H7Fmaf" class="button" target="_blank">Install Now!</a></div>
+      <br>
+
+      <div class = 'section' id = 'about'>
+        
+        <div class="hold">
+          <box>
+            <h1>About</h1>
+          </box>
+        </div>
+   
+        <div class="hold">
+          <box class="left">
+            <div class="holder">
+              <div style="display: block;">
+                <large class="l">Barad is a multipurpose bot built for security, moderation, 
+                  and promoting transparency between moderation and server members,
+                  with a lot of other fun commands on the side!</large> 
+              </div>
+            </div>
+          </box>
+          <box class="right">
+            <div class="holder">
+              <div style="display: block;">
+                <large class="l">Use this bot for:</large> 
+                <ul class="bullet large">
+                  <li><span>Server Defense</span></li>
+                  <li><span>Mass Edits</span></li>
+                  <li><span>Meme Generation</span></li>
+                  <li><span>and more!</span></li>
+                </ul>
+              </div>
+            </div>
+          </box>
+        </div>
+       
+        <div class="hold">
+          <box class = 'fit' style = 'padding: 25px 35px'>
+            <large>Supports slash commands, mentions, and a prefix ([])</large>
+          </box>
+        </div>
+        <div class="hold">
+          <box class = 'fit' style = 'padding: 25px 35px'>
+            <large>Use the nav menu to explore our<br>commands and functions!</large>
+          </box>
+        </div>
+
+      </div>
+
+      <div class = 'section' id = 'general'>
+      
+        <div class="hold">
+          <box class='top'>
+            <h1>General Commands</h1>
+            <div>
+              <box class = 'c'>
+                  Basic information for bot and server, available to all users
+                  <br>
+                  We believe that every member of a server has the right to know the actions taken by mods and admins, 
+                  so this includes commands that allow any user to access server bans and audit logs
+              </box>
+            </div>
+          </box>
+        </div>
+        
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>help</c>
+              <div>           
+                <box>
+                  <div>
+                    <p>
+                      <strong>Provides a link to this page</strong>
+                    </p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+       
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>install</c>
+              <div>
+                <box>
+                  <div>
+                    <p>
+                      <strong>Provides <a href = 'https://bit.ly/3H7Fmaf' target="_blank">bot invite link</a></strong>
+                    </p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+       
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>server info</c>  
+              <div>
+                <box>
+                  <div>
+                    <p>
+                      <strong>Provides server information, including:</strong>
+                      <ul class="bullet small" style = 'margin: 15px;'>
+                        <li><span>ID</span></li>
+                        <li><span>Owner</span></li>
+                        <li><span>Member Count <n>(total, bots)</n></span></li>
+                        <li><span>Channel Count <n>(total, text, voice)</n></span></li>
+                        <li><span>Role Count</span></li>
+                        <li><span>Emoji Count</span></li>
+                        <li><span>Creation date</span></li>
+                      </ul>
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(optional)</n> id</dt> 
+                          <dd>ID of server (that also has this bot) to provide information on <n>(default: current server)</n></dd>
+                      </dl>
+                      <strong class = 'o id'>Must set id if command if used in direct message</strong><br><br>
+                    </p>
+                  </div>
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>    
+        </div>
+  
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>server owner</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Provides server owner mention and id</strong></p><br>
+                  </div>
+                  <div>
+                    <p>Parameters: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>server logs</c>
+              <div>
+                <box>
+                  <div>
+                    <p>
+                      <strong>Provides list of server audit logs, including</strong>
+                      <ul class="bullet small" style = 'margin: 15px;'>
+                        <li><span>How long ago the action occured</span></li>
+                        <li><span>User responsible for action</span></li>
+                        <li><span>Action type <n>(eg: channel update, integration create)</n></span></li>
+                        <li><span>Target affected by action</span></li>
+                      </ul>
+                    </p>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(optional)</n> logs</dt> 
+                          <dd>
+                            number of logs to fetch
+                            <n>(default: 15)</n>
+                          </dd>
+                      </dl>
+                    </p>
+                  </div>
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>ban members,</n> <n>send messages</n></p>
+                  </div>
+                </box>
+             </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>server bans</c>
+              <div>
+                <box>
+                  <div>
+                    <p>
+                      <strong>Provides server banlist</strong>
+                    </p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(optional)</n> logs</dt> 
+                          <dd>
+                            number of logs to fetch
+                            <n>(default: 15)</n>
+                          </dd>
+                      </dl>
+                    </p>
+                  </div>
+                  <div>
+                    <p>User Permissions: <n>view audit logs</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>ban members,</n> <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>rename me</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Edits nickname of user</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(required)</n> name</dt> 
+                        <dd>
+                          name to be set 
+                        </dd>
+                      </dl>
+                    </p>
+                  </div>
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>manage nicknames,</n> <n>send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+      </div>
+
+      <div class = 'section' id = 'mod'>
+
+        <div class="hold">
+          <box class='top'>
+            <h1>Moderation Commands</h1>
+            <div>
+              <box class = 'c'>
+                  Commands only available to server members with specific permissions
+                  <br>
+                  A majority of these commands were developed to easily utilized moderation function or to easily enact mass edits on large numbers of users
+                  <br>
+                  <p class = 'o c'>Note: These commands can be easily abused, so be careful with who has permissions to use them</p>
+              </box>
+            </div>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>mass rename</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Renames all selected users</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(required)</n> targets</dt> 
+                          <dd>
+                            mentions of users to be renamed
+                            <n>(mention roles to select all members with those roles)</n>
+                          </dd>
+                        <dt><n>(optional)</n> exclude</dt> 
+                          <dd>
+                            mentions of users and roles to be excluded from renaming
+                            <n>(default: none)</n>
+                          </dd>
+                        <dt><n>(optional)</n> setting</dt> 
+                          <dd>
+                            whether to set names or reset to default
+                            <n>(default: 'Set')</n>
+                          </dd>
+                        <dt><n>(optional)</n> name</dt> 
+                          <dd>
+                            nickname to set for selected users if setting is 'Set'
+                            <n>(names will be set to gibberish of setting is 'Set' and no name is provided)</n>
+                          </dd> 
+                        <dt><n>(optional)</n> reason</dt> 
+                        <dd>
+                          reason for renaming to be added in audit logs
+                          <n>(default: none)</n>
+                        </dd> 
+                      </dl>
+                    </p>             
+                  </div>      
+                  <div>
+                    <p>User Permissions: <n>manage nicknames</n></p><br>
+                    <strong class = 'o id'>Only users under command author and bot in roles will be edited</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>manage nicknames, send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>mass rolemod</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Edits roles of all selected users</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(required)</n> roles</dt> 
+                        <dd>
+                          mentions of roles to be edited for selected users
+                          <n>(only roles under bot can be selected)</n>
+                        </dd>
+                        <dt><n>(required)</n> targets</dt> 
+                          <dd>
+                            mentions of users to have their roles edited
+                            <n>(mention roles to select all members with those roles)</n>
+                          </dd>
+                        <dt><n>(optional)</n> exclude</dt> 
+                          <dd>
+                            mentions of users and roles to be excluded from role editing
+                            <n>(default: none)</n>
+                          </dd>
+                        <dt><n>(optional)</n> setting</dt> 
+                          <dd>
+                            whether to give the roles, take the roles, or set the roles
+                            <n>(default: 'Give')</n>
+                            <n>Note: setting will add the roles but remove all other roles from a user and can only be done for users under  command author and bot in roles</n>
+                          </dd>
+                        <dt><n>(optional)</n> reason</dt> 
+                        <dd>
+                          reason for role edit to be added in audit logs
+                          <n>(default: none)</n>
+                        </dd> 
+                      </dl>
+                    </p>             
+                  </div>      
+                  <div>
+                    <p>User Permissions: <n>manage roles</n></p><br>
+                    <strong class = 'o id'>Command author must be above bot in roles</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>manage roles, send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>mass kick</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Kicks all selected users</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(required)</n> targets</dt> 
+                          <dd>
+                            mentions of users to be kicked
+                            <n>(mention roles to select all members with those roles)</n>
+                          </dd>
+                        <dt><n>(optional)</n> exclude</dt> 
+                          <dd>
+                            mentions of users and roles to be excluded from kicking
+                            <n>(default: none)</n>
+                          </dd>
+                        <dt><n>(optional)</n> reason</dt> 
+                          <dd>
+                            reason for kick to be added in audit logs
+                            <n>(default: none)</n>
+                          </dd> 
+                      </dl>
+                    </p>             
+                  </div>      
+                  <div>
+                    <p>User Permissions: <n>kick members</n></p><br>
+                    <strong class = 'o id'>Command author must be above bot in roles</strong><br><br>
+                    <strong class = 'o id'>Only members under command author will be kicked</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>kick members, send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>mass ban</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Bans all selected users</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(required)</n> targets</dt> 
+                          <dd>
+                            mentions of users to be banned
+                            <n>(mention roles to select all members with those roles)</n>
+                          </dd>
+                        <dt><n>(optional)</n> exclude</dt> 
+                          <dd>
+                            mentions of users and roles to be excluded from banning
+                            <n>(default: none)</n>
+                          </dd>
+                        <dt><n>(optional)</n> reason</dt> 
+                          <dd>
+                            reason for ban to be added in audit logs
+                            <n>(default: none)</n>
+                          </dd> 
+                      </dl>
+                    </p>             
+                  </div>      
+                  <div>
+                    <p>User Permissions: <n>ban members</n></p><br>
+                    <strong class = 'o id'>Command author must be above bot in roles</strong><br><br>
+                    <strong class = 'o id'>Only members under command author and bot or users not in server will be banned</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>ban members, send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>unban users</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Unbans all selected users</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(required)</n> targets</dt> 
+                          <dd>
+                            mentions of users to be unbanned
+                            <n>(users must be in server banlist)</n>
+                          </dd>
+                        <dt><n>(optional)</n> reason</dt> 
+                          <dd>
+                            reason for ban to be added in audit logs
+                            <n>(default: none)</n>
+                          </dd> 
+                      </dl>
+                    </p>             
+                  </div>      
+                  <div>
+                    <p>User Permissions: <n>ban members</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>ban members, send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>unban all</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Unbans all banned users</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(optional)</n> exclude</dt> 
+                          <dd>
+                            mentions of users to exclude from being unbanned
+                            <n>(default: none)</n>
+                          </dd>
+                        <dt><n>(optional)</n> reason</dt> 
+                          <dd>
+                            reason for ban to be added in audit logs
+                            <n>(default: none)</n>
+                          </dd> 
+                      </dl>
+                    </p>             
+                  </div>      
+                  <div>
+                    <p>User Permissions: <n>ban members</n></p><br>
+                    <strong class = 'o id'>Command author must be above bot in roles</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>ban members, send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>purge</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Removes elements containing a certain key</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(required)</n> key</dt> 
+                          <dd>
+                            string to search for in server
+                          </dd>
+                        <dt><n>(optional)</n> purge_channels</dt> 
+                          <dd>
+                            whether to remove channels with names containing key
+                            <n>(default: 'No')</n>
+                          </dd> 
+                        <dt><n>(optional)</n> purge_roles</dt> 
+                          <dd>
+                            whether to remove roles with names containing key
+                            <n>(default: 'No')</n>
+                          </dd> 
+                        <dt><n>(optional)</n> purge_emojis</dt> 
+                          <dd>
+                            whether to remove emojis with names containing key
+                            <n>(default: 'No')</n>
+                          </dd> 
+                        <dt><n>(optional)</n> purge_users</dt> 
+                        <dd>
+                          whether to remove users with names containing key
+                          <n>(default: 'No')</n>
+                        </dd>
+                        <dt><n>(optional)</n> reason</dt> 
+                        <dd>
+                          reason for purge to be added in audit logs
+                          <n>(default: none)</n>
+                        </dd> 
+                      </dl>
+                      <strong class = 'o id'>Must select 'Yes' for at least one purge option</strong><br><br>
+                    </p>             
+                  </div>      
+                  <div>
+                    <p>User Permissions: <n>administrator</n></p><br>
+                    <strong class = 'o id'>Command author must be above bot in roles</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages,</n> <n>all permissions to delete selected items</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>message all</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>DMs all users in server</strong> <n>(note: recipients will be made aware of sender)</n></p>
+                    <br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(required)</n> message</dt> 
+                          <dd>
+                            message to send to all users
+                            <n>(up to 4096 characters)</n>
+                          </dd>
+                      </dl>
+                    </p>             
+                  </div>      
+                  <div>
+                    <p>User Permissions: <n>administrator</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>leave</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Removes bot from server</strong></p>
+                    <br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>
+                  <div>
+                    <p>User Permissions: <n>administrator</n></p><br>
+                    <strong class = 'o id'>Command author must be above bot in roles</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>none</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class = 'section' id = 'automod'>
+  
+          <div class="hold">
+            <box class='top'>
+              <h2>Automod Functions</h2>
+              <div>
+                <box class = 'c'>
+                    Automatic actions taken by bot under certain conditions
+                    <br>
+                    <p class = 'o c'>Note: These cannot be disabled and apply to any users below bot in roles</p>
+                </box>
+              </div>
+            </box>
+          </div>
+  
+          <div class="hold">
+            <box>
+              <command_drop>
+                <label>
+                  <input type="checkbox" class="open">
+                  <img class = 'open' src="open.png">
+                </label>
+                <e>Kick/Ban Logger</e>
+                <div>
+                  <box>
+                    <div>
+                      <p><strong>Any server member below bot in roles is banned if they remove more than 10 users in a period of 5 minutes or less.</strong></p><br>
+                    </div>  
+                    <div>
+                      <p>Bot Permissions: <n>ban members</n></p>
+                    </div>
+                    <div>
+                      <br>
+                      <strong class = 'o'>Only useable in servers</strong>
+                    </div>
+                  </box>
+                </div>
+              </command_drop>
+            </box>
+          </div>
+
+          <div class="hold">
+            <box>
+              <command_drop>
+                <label>
+                  <input type="checkbox" class="open">
+                  <img class = 'open' src="open.png">
+                </label>
+                <e>Channel Deletion Logger Logger</e>
+                <div>
+                  <box>
+                    <div>
+                      <p><strong>Any server member below bot in roles is banned if they delete more than 10 channels in a period of 5 minutes or less.</strong></p><br>
+                    </div>  
+                    <div>
+                      <p>Bot Permissions: <n>ban members</n></p>
+                    </div>
+                    <div>
+                      <br>
+                      <strong class = 'o'>Only useable in servers</strong>
+                    </div>
+                  </box>
+                </div>
+              </command_drop>
+            </box>
+          </div>
+
+          <div class="hold">
+            <box>
+              <command_drop>
+                <label>
+                  <input type="checkbox" class="open">
+                  <img class = 'open' src="open.png">
+                </label>
+                <e>Role Deletion Logger</e>
+                <div>
+                  <box>
+                    <div>
+                      <p><strong>Any server member below bot in roles is banned if they delete more than 10 channels in a period of 5 minutes or less.</strong></p><br>
+                    </div>  
+                    <div>
+                      <p>Bot Permissions: <n>ban members</n></p>
+                    </div>
+                    <div>
+                      <br>
+                      <strong class = 'o'>Only useable in servers</strong>
+                    </div>
+                  </box>
+                </div>
+              </command_drop>
+            </box>
+          </div>
+
+          <div class="hold">
+            <box>
+              <command_drop>
+                <label>
+                  <input type="checkbox" class="open">
+                  <img class = 'open' src="open.png">
+                </label>
+                <e>Anti-Spam Moderation</e>
+                <div>
+                  <box>
+                    <div>
+                      <p><strong>Any message that has already been repeated more than 5 times within 30 seconds in any channel not containing "spam" in its name will be deleted.</strong></p><br>
+                    </div>  
+                    <div>
+                      <p>Bot Permissions: <n>manage messages</n></p>
+                    </div>
+                    <div>
+                      <br>
+                      <strong class = 'o'>Only useable in servers</strong>
+                    </div>
+                  </box>
+                </div>
+              </command_drop>
+            </box>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class = 'section' id = 'roulette'>
+  
+        <div class="hold">
+          <box class='top'>
+            <h1>Discord Roulette</h1>
+            <div>
+              <box class = 'c'>
+                  A fun game to play with friends!
+                  <br><br>
+                  To set up a server for the game the following channels and roles need to be created: 
+                  <br><br>
+                  <table class = 'two_column' style="width:100%">
+                    <tr>
+                      <th>Roles</th>
+                      <th>Channels</th>
+                    </tr>
+                    <tr>
+                      <td>@Playing</td>
+                      <td>#player-chat</td>
+                    </tr>
+                    <tr>
+                      <td>@Killer</td>
+                      <td>#killer-chat</td>
+                    </tr>
+                    <tr>
+                      <td>@Dead</td>
+                      <td>#dead-chat</td>
+                    </tr>
+                    <tr>
+                      <td>@Spectator</td>
+                      <td>#registration</td>
+                    </tr>
+                  </table>
+                  <p class = 'c'>Note: Bot must be above all four roles and have access to all four channels</p>
+              </box>
+            </div>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>roulette info</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Provides a link to this page.</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>roulette register</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Enters user into the game, gives them @Playing, and removes @Spectator</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                    <strong class = 'o id'>Command author must have @Spectator role to register</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>manage roles, send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>roulette unregister</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Cancels registration by giving user @Spectator and removing @Playing</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                    <strong class = 'o id'>Command author must have @Playing role to register</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>manage roles, send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+  
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>roulette select_killer</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Selects a random player to be killer and gives them @Killer</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                    <strong class = 'o id'>Command author must have @Playing role</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>manage roles, send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>roulette shoot</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Simulates the shooting of a target, gives them @Dead if they are shot or makes them the next killer if they survive.</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(required)</n> targets</dt> 
+                          <dd>
+                            mention of a player to target
+                          </dd>
+                        <dt><n>(required)</n> bullets</dt> 
+                          <dd>
+                            number of bullets (1-6) to be loaded
+                          </dd>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                    <strong class = 'o id'>Command author must have @Killer role</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>manage roles, send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>roulette reset</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Resets the game by removing @Killer, @Dead, and @Playing from all users with those roles and adding @Spectator</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                    <strong class = 'o id'>Command author must have @Playing role</strong><br><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>manage roles, send messages</n></p>
+                  </div>
+                  <div>
+                    <br>
+                    <strong class = 'o'>Only useable in servers</strong>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+      </div>
+
+      <div class = 'section' id = 'sw'>
+
+        <div class="hold">
+          <box class='top'>
+            <h1>Star Wars Commands</h1>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>senate</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>"I am the Senate!"</strong> <n>(try replying to it)</n></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>democracy</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>"I love democracy. I love the republic."</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>darth plagueis</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>"Did you ever hear the Tragedy of Darth Plagueis the Wise?"</strong> <n>(try replying to it)</n></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>darth maul</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>"You have been well trained, my young apprentice. They will be no match for you."</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>unlimited power</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>"I'm too weak..."</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>sheev</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Posts an image of the Senate.</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>master windu</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>"You're under arrest!"</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>yoda</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>"You survived."</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>anakin</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>"I was right! The Jedi are taking over!"</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+        
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>high ground</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>"It's over Anakin!"</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>hello there</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>"General Kenobi!"</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>clone generate</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Semi-randomly generates clone troopers (and other clones in Star Wars) via CT number.</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(optional)</n> ct_number</dt> 
+                          <dd>
+                            custom designation for generated clone containing only digits 0-9, dashes (-), and forward slashes (/)
+                            <n>(default: randomly generated)</n>
+                          </dd>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+        
+      </div>
+
+      <div class = 'section' id = 'misc'>
+
+        <div class="hold">
+          <box class='top'>
+            <h1>Miscellaneous Commands</h1>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>yuh</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Sends the "yuh" emoji</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>lucas yuh</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Sends the "yuh" emoji but it's Lucas</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>we_do_a_little_trolling</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>We do quite a considerable amount of mental trickery</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>bad apple</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Guess what this does... (note: very laggy)</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>tomato</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Sends an image of a warrior of the Tomato Kingdom from the Great Vegetable Wars.</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>potato</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Sends an image of a warrior of the Potato Empire from the Great Vegetable Wars.</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>marauder megatron</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Sends an image of Marauder Megatron from Transformers Animated season 4.</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters: <n>none</n>
+                    </p><br>
+                  </div>    
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+        
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>dice roll</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Simulates rolling a die</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(optional)</n> sides</dt> 
+                          <dd>
+                            number of sides on die
+                            <n>(default: 6)</n>
+                          </dd>
+                      </dl>
+                    </p>             
+                  </div>      
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>tribute submit</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Hunger Games submission to bot owner</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(required)</n> name</dt> 
+                          <dd>
+                            name of tribute
+                          </dd>
+                        <dt><n>(optional)</n> gender</dt> 
+                          <dd>
+                            gender of tribute
+                            <n>(default: 'N/A')</n>
+                          </dd>
+                        <dt><n>(optional)</n> image</dt> 
+                          <dd>
+                            image of tribute
+                            <n>(default: none)</n>
+                          </dd>
+                      </dl>
+                    </p>             
+                  </div>      
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+        <div class="hold">
+          <box>
+            <command_drop>
+              <label>
+                <input type="checkbox" class="open">
+                <img class = 'open' src="open.png">
+              </label>
+              <c>set timer</c>
+              <div>
+                <box>
+                  <div>
+                    <p><strong>Sets a timer and pings user when time is up</strong></p><br>
+                  </div>
+                  <div>
+                    <p>
+                      Parameters:
+                      <dl class="small">
+                        <dt><n>(optional)</n> hours</dt> 
+                          <dd>
+                            number of hours to be set
+                            <n>(default: 0)</n>
+                          </dd>
+                        <dt><n>(optional)</n> minutes</dt> 
+                          <dd>
+                            number of minutes to be set
+                            <n>(default: 0)</n>
+                          </dd>
+                        <dt><n>(optional)</n> description</dt> 
+                          <dd>
+                            description for timer 
+                            <n>(default: none)</n>
+                          </dd> 
+                      </dl>
+                      <strong class = 'o id'>Total time set must be greater than 0 minutes</strong><br><br>
+                    </p>             
+                  </div>      
+                  <div>
+                    <p>User Permissions: <n>none</n></p><br>
+                  </div>
+                  <div>
+                    <p>Bot Permissions: <n>send messages</n></p>
+                  </div>
+                </box>
+              </div>
+            </command_drop>
+          </box>
+        </div>
+
+      </div>
+      
+    </content>
+  </page>
+</body>
+</html>
