@@ -91,7 +91,7 @@ async def on_ready():
 @bot_has_permissions(send_messages = True)
 async def help(ctx: commands.Context):
   e = {'title': "__Help__",
-       'description': "[Barad-Dur Docs Page](https://docdro.id/IPjk8BI)"}
+       'description': "[Barad-Dur Docs Page](https://justarandom-1.github.io/barad-bot/)"}
   await ctx.send(embed = embed(e).set_thumbnail(url = "https://i.imgur.com/s042Mgn.png"))
 
 @bot.hybrid_command(name="install", description="Provides bot installation link")
